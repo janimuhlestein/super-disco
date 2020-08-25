@@ -1,2 +1,1 @@
-# super-disco
-A scheduling application - challenge 5
+# Work Day Scheduler Starter Code
