@@ -3,8 +3,8 @@
 Features:
 
 1. Displays current day.
-2. When user clicks on the <p> element on the text section, it becomes a textarea.
-3. When they click on the save button, it returns to a <p>.
+2. When user clicks on the p element on the text section, it becomes a textarea.
+3. When they click on the save button, it returns to a p.
 4. The existing tasks are then saved to localStorage, so that the user can refresh
     their browser without losing it.
 5. The application checks to see if the currrent hour is equal to the hour row.
