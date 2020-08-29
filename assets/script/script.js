@@ -61,7 +61,6 @@ $(".row").on("click",".saveBtn", function() {
     tasks[key] =taskP.text();
     console.log(tasks);
     localStorage.setItem("appointments", JSON.stringify(tasks));
-
 } );
 
 //allow them to edit the text by turning the p into a textarea
@@ -93,6 +92,10 @@ var setHour = function() {
     else{
         div.addClass("future");
     }
+   }
+   //if it's the end of the day, clear the calendar
+   if(currentHour > 17) {
+       localStorage.clear();
    }
 };
 
