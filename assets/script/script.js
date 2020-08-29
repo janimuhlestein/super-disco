@@ -2,6 +2,7 @@
 var taskText;
 var tasks = {};
 var currrentDay = moment().format("dddd, MMMM Do YYYY, h:mm a");
+var taskText;
 
 //add a new task
 $(".col-8").on("click","p", function(){
@@ -22,6 +23,8 @@ $(".col-8").on("blur", "textarea", function(){
     .text(text);
 
     $(this).replaceWith(par);
+    taskText = text;
+    
 });
 
 
@@ -36,6 +39,8 @@ var loadTasks = function() {
     tasks = JSON.parse(localStorage.getItem("appointments"));
     //if there's nothing there, don't worry about it
     if(!tasks) {
+        //create new objecy
+        tasks = {};
        return false;
     }
     else {
@@ -54,11 +59,7 @@ $(".row").on("click",".saveBtn", function() {
     console.log(key);
     key = String(key);
     key = "#" + key;
-
-    //first, find the saveBtn's parent node id
-    var taskP = $(key).find("p");
-    console.log(taskP.text());
-    tasks[key] =taskP.text();
+    tasks[key] = taskText;
     console.log(tasks);
     localStorage.setItem("appointments", JSON.stringify(tasks));
 } );
@@ -77,11 +78,17 @@ $(".taskInput").on("click", "p", function() {
 //get current hour
 var setHour = function() {
     //get the current hour
+    //clear the H off of the ID
+    var id = "H8";
+    var key = id.substr(1,4);
+    console.log(key);
 
   var currentHour = moment().hours();
    for(var i = 8; i<18; i++) {
        var string = String(i);
-       var div = $("#" + string).find("#textDiv");
+       var divID = "#H" + string;
+       var div = $(divID).find("#textDiv");
+       
     if(i===currentHour) {
         div.addClass("present");
     }
