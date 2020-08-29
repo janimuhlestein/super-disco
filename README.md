@@ -15,4 +15,6 @@ Features:
 10. If the hour is greater than 17 (5:00PM), clear the localStorage as the day is over.
 
 
-![workday](https://user-images.githubusercontent.com/52082187/91647715-268cce00-ea1b-11ea-9d9b-31aa34e52625.jpg)
+![workday](https://user-images.githubusercontent.com/52082187/91647776-c6e2f280-ea1b-11ea-8ea0-6b14cbfcaf76.jpg)
+
+
