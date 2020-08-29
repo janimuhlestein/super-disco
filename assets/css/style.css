@@ -81,3 +81,16 @@ textarea{
 .col-8 p{
 height: 45px;
 }
+
+.title {
+  font-family: 'Staatliches', cursive;
+  font-size: 48px;
+}
+
+.lead {
+  font-family: 'Merriweather', serif;
+}
+
+.large {
+  font-size: 48px;
+}
