@@ -12,5 +12,6 @@ Features:
 7. It the current hour is greater than the hour row, it is set to gray.
 8. If the current hour is less than the row hour, it is set to green.
 9. Force refresh of calendar every 30 minutes.
+10. If the hour is greater than 17 (5:00PM), clear the localStorage as the day is over.
 
 
