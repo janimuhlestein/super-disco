@@ -96,6 +96,15 @@ var setHour = function() {
    }
 };
 
+//force refresh every 30 minutes
+var refresh = function() {
+    setTimeout(function(){
+        window.location.reload(1);
+    }, 180000);
+};
+
+
 //loadTasks
 loadTasks();
 setHour();
+refresh();

@@ -11,5 +11,6 @@ Features:
 6. If so, the application sets that row to be red.
 7. It the current hour is greater than the hour row, it is set to gray.
 8. If the current hour is less than the row hour, it is set to green.
+9. Force refresh of calendar every 30 minutes.
 
 
