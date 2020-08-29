@@ -78,8 +78,7 @@ $(".taskInput").on("click", "p", function() {
 var setHour = function() {
     //get the current hour
 
-  //var currentHour = moment().hours();
-   var currentHour = 10;
+  var currentHour = moment().hours();
    for(var i = 8; i<18; i++) {
        var string = String(i);
        var div = $("#" + string).find("#textDiv");
